@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    body {
+      background-color: aquamarine;
+    }
+    
+    @media (min-width: 319px) and (max-width: 480px){
+      body{
+        background-color: salmon;
+        font-size: 22px;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px){
+      body{background-color: bisque;
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px){
+      body{background-color: coral;
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 1601px){
+      body{background-color: black;
+        color: white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="color:black;">Hello CSS @media queries!!</h1> 
+  <p>You can add multiple media queries within a stylesheet, tweaking your whole layout or parts of it to best suit the various screen sizes. The points at which a media query is introduced, and the layout changed, are known as breakpoints.
+
+    A common approach when using Media Queries is to create a simple single-column layout for narrow-screen devices (e.g. mobile phones), then check for wider screens and implement a multiple-column layout when you know that you have enough screen width to handle it. Designing for mobile first is known as mobile first design.</p>
+</body>
+
+</html>
